@@ -145,7 +145,7 @@ export function PixelRunner() {
       const vh = window.innerHeight;
       const scale = Math.max(
         1,
-        Math.floor(Math.min(vw / VW, vh / VH)),
+        Math.min(vw / VW, vh / VH),
       );
       const cssW = VW * scale;
       const cssH = VH * scale;
