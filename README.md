@@ -15,35 +15,6 @@ Play as an auto-running astronaut on an alien planet, jumping over obstacles and
 - **Language:** TypeScript
 - **Leaderboard:** Supabase (Postgres + REST API)
 
-## Getting Started
-
-```bash
-# Install dependencies
-bun install
-
-# Start dev server
-bun run dev
-
-# Build for production
-bun run build
-
-# Preview production build
-bun run preview
-```
-src/
-├── routes/
-│   ├── index.tsx          # Game page, SEO meta tags
-│   └── __root.tsx         # Root layout, font import
-├── components/game/
-│   ├── PixelRunner.tsx    # Canvas mount, input handlers, RAF loop, UI overlays
-│   ├── engine.ts          # Game state, update/render loop, entities
-│   ├── storage.ts         # High score + name persistence (localStorage)
-│   ├── supabase.ts        # Supabase client config
-│   └── leaderboard.ts     # Score submit + fetch helpers
-└── styles.css             # Tailwind config
-```
-
-Ensure the table is publicly readable (anon key can SELECT) and insertable.
 
 
 ## How to Play
