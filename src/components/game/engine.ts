@@ -289,7 +289,7 @@ export function update(s: State, input: Input) {
   }
 
   // playing
-  s.speed = 2.2 + Math.min(8, s.score / 500);
+  s.speed = 2.2 + Math.min(8, s.score / 1000);
   s.duration = Math.floor((performance.now() - s.startTime) / 1000);
   scrollParallax(s, s.speed);
 
